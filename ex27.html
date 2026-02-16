@@ -1,0 +1,65 @@
+<!-- implementation program -->
+<!DOCTYPE html>
+<html lang="en">   
+  <head>
+    <title>Reg Form</title>
+    <link  rel="icon" href="logo2.png"/>   
+  </head>
+  <body>   
+	<div style="width:340px; background:blue; color:white; margin:auto; border-radius:12px; box-shadow:0 0 25px black; padding:15px;">
+	  <h2 align="center">Registration Form</h2>
+	  <form id="frm1" action="reg.html">
+		<p>
+		  <label for="fna">Fullname *</label> <br>
+		  <input type="text" id="fna" name="fna" required />
+		</p>
+		<p>
+		  <label for="em">Email *</label> <br>
+		  <input type="email" id="em" name="em" required> <br>
+		</p>
+		<p>
+		  <label for="ph">Contact number*</label> <br>
+		  <input type="number" id="ph" name="ph" required min="6000000000" max="9999999999">
+		</p>	
+		<p>
+		  <label for="bod">Date of Birth</label> <br>
+		  <input type="date" id="dob" name="dob" min="1996-02-12" max="2010-02-12">
+		</p>
+		<p>
+		  <label>Gender:</label> <br>
+		  <input type="radio" id="gen1" name="gen" checked><label for="gen1">Male</label>
+		  &nbsp; 
+		  <input type="radio" id="gen2" name="gen"><label for="gen2">Female</label> &nbsp; 
+		  <input type="radio" id="gen3" name="gen"><label for="gen3">Others</label>
+		</p>
+		<p>
+		  <label for="course">Which Course?</label>
+		  <br>
+		  <select id="course">
+		    <option value="fsj">Full Stack Java</option>
+			<option value="fsp">Full Stack Python</option>
+			<option value="fsdn">Full Stack Dot.Net</option>
+			<option value="fsui" selected>UI Full Stack</option>
+		  </select>
+		</p>
+		<p>
+		  <label for="mot">Mode of Training</label> <br>
+		  <select id="mot">
+		    <option value="ct">Classroom Training</option>
+		    <option value="ot">Online Training</option>
+			<option value="pmt">Placement Training</option>			
+			<option value="pt">Project Training</option>			
+			<option value="intr">Internship</option>
+		  </select>
+		</p>
+		<p align="center">
+		  <input type="checkbox" id="tc" required>
+		  <label for="tc">I Accepted All Terms and Conditions</label>
+		</p>
+		<p align="center">
+		  <button type="submit">Register now</button>
+		</p>
+	  </form>
+	</div>
+  </body>
+</html>

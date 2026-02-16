@@ -1,0 +1,40 @@
+<!-- example on "input" tag -->
+<!DOCTYPE html>
+<html lang="en">   
+  <head>
+    <title>My 24th Webpage</title>
+    <link  rel="icon" href="logo2.png"/>   
+  </head>
+  <body id="b">   
+	<h3 id="h">demo on email, url, date, time, week, month, color, button fields (html5)</h3>
+ 
+    <form action="test.aspx">
+	  <label for="em">enter email</label>
+	  <input type="email" id="em">
+	  <br>
+	  <label for="u">enter url</label>
+	  <input type="url" id="u">
+	  <br>
+	  <label for="d">select date</label>
+	  <input type="date" id="d">
+	  <br>
+	  <label for="t">select time</label>
+	  <input type="time" id="t">
+	  <bR>
+	  <label for="w">select</label>
+	  <input type="week" id="w">
+	  <br>
+	  <label for="m">select month</label>
+	  <input type="month" id="m">
+	  <br>
+	  <label for="dt">select date&time</label>
+	  <input type="datetime-local" id="dt">
+	  <br>
+	  <input type="color" id="c" oninput="b.style.background=c.value">
+	  <br>
+	  
+	  <button type="reset">Clear All</button>
+	  <button type="submit">Submit</button>
+	</form>
+  </body>
+</html>
